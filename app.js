@@ -32,7 +32,7 @@ app.use(cors(corsOptions));
 //! Routes
 const shopRoutes = require("./routes/shopRouter");
 app.use(express.json());
-app.use("/api/shops", shopRoutes);
+app.use("", shopRoutes);
 
 //! Start the server
 const PORT = process.env.PORT || 8000;
