@@ -127,7 +127,7 @@ const shopController = {
 
   //!SEARCH SINGLE SHOP BY NAME
   searchShopByName: asyncHandler(async (req, res) => {
-    const { shopName } = req.params.shopName;
+    const { shopName } = req.params;
 
     // Check if shopName is provided
     if (!shopName) {
