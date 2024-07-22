@@ -25,7 +25,7 @@ const geocoder = NodeGeocoder({
 });
 //!CORS
 const corsOptions = {
-  origin: ["http://localhost:3000"],
+  origin: ["https://store-management-frontend-zeta.vercel.app"],
 };
 app.use(cors(corsOptions));
 
